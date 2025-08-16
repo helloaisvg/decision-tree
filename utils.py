@@ -115,6 +115,12 @@ def print_dataset_summary():
     """
     打印数据集摘要信息
     """
+    global X_train, y_train
+    
+    if X_train is None or y_train is None:
+        print("数据集未设置，请先调用 set_dataset() 函数")
+        return
+    
     print("蘑菇数据集摘要")
     print("=" * 30)
     print(f"总样本数: {len(X_train)}")
