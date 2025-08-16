@@ -15,6 +15,9 @@ def run_complete_demo():
     # 设置数据集供可视化函数使用
     set_dataset(X_train, y_train)
     
+    # 验证数据集设置
+    print(f"数据集设置验证: X_train shape = {X_train.shape}, y_train length = {len(y_train)}")
+    
     # 1. 数据集概览
     print("\n📊 数据集概览")
     print("-" * 30)
